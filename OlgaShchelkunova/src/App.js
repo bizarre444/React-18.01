@@ -11,11 +11,10 @@ class App extends React.Component{
             {href: "/contacts", title: "Contacts"}
         ]
 
-        return 'console';
-        // return (<div>
-        // <h1>First project</h1>
-        // <Menu titleMenu="Main menu" items={menuItems}/>
-        // </div>);
+        return (<div>
+        <h1>First project</h1>
+        <Menu titleMenu="Main menu" items={menuItems}/>
+        </div>);
     }
 }
 
