@@ -1,6 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import Menu from './Menu';
+import Login from './Login';
 
 class App extends React.Component{
     render() {
@@ -11,9 +12,17 @@ class App extends React.Component{
             {href: "/contacts", title: "Contacts"}
         ]
 
+        const loginItems = [
+            {type: "text", title: "login"},
+            {type: "password", title: "password"},
+            {type: "button", title: "push me"}
+        ]
+
+
         return (<div>
-        <h1>First project</h1>
-        <Menu titleMenu="Main menu" items={menuItems}/>
+            <h1>First project</h1>
+            <Menu titleMenu="Main menu" items={menuItems}/>
+            <Login titleLogin="Login and password" items={loginItems}/>
         </div>);
     }
 }
